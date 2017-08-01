@@ -1,0 +1,1287 @@
+<?xml version="1.0"?>
+<robot
+  name="UXAFull">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.00752726802205068 -0.181456334292252 0.0110801445302722"
+        rpy="0 0 0" />
+      <mass
+        value="8.8041790191809" />
+      <inertia
+        ixx="0.766282517284559"
+        ixy="0.00757780893532764"
+        ixz="-0.000755961857913399"
+        iyy="0.158268796043675"
+        iyz="-0.0655471706214328"
+        izz="0.874612950294005" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UXAFull/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UXAFull/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="L9_11">
+    <inertial>
+      <origin
+        xyz="-0.121456334292252 0.0645272680220504 0.0107401445302817"
+        rpy="0 0 0" />
+      <mass
+        value="8.8041790191809" />
+      <inertia
+        ixx="0.158268796043675"
+        ixy="-0.00757780893532848"
+        ixz="-0.0655471706214328"
+        iyy="0.766282517284559"
+        iyz="0.000755961857913308"
+        izz="0.874612950294005" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UXAFull/meshes/L9_11.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UXAFull/meshes/L9_11.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J9_11"
+    type="revolute">
+    <origin
+      xyz="0.057 -0.00034 -0.06"
+      rpy="1.5708 -1.5708 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="L9_11" />
+    <axis
+      xyz="1 0 0" />
+<limit    upper="0.5" lower="-.5"   effort="2"  velocity="2" />
+  </joint>
+  <link
+    name="L7_9">
+    <inertial>
+      <origin
+        xyz="-0.064427 -0.057561 0.01074"
+        rpy="0 0 0" />
+      <mass
+        value="8.8042" />
+      <inertia
+        ixx="0.76628"
+        ixy="0.0075778"
+        ixz="-0.00075596"
+        iyy="0.15827"
+        iyz="-0.065547"
+        izz="0.87461" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UXAFull/meshes/L7_9.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UXAFull/meshes/L7_9.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J7_9"
+    type="revolute">
+    <origin
+      xyz="-0.063895 9.9846E-05 0"
+      rpy="0 0 -1.5708" />
+    <parent
+      link="L9_11" />
+    <child
+      link="L7_9" />
+    <axis
+      xyz="0 0 1" />
+<limit    upper="0.5" lower="-.5"   effort="2"  velocity="2" />
+  </joint>
+  <link
+    name="L5_7">
+    <inertial>
+      <origin
+        xyz="-0.0644274222123325 0.0107401445302817 0.0575613342920603"
+        rpy="0 0 0" />
+      <mass
+        value="8.8041790191809" />
+      <inertia
+        ixx="0.766282517284559"
+        ixy="-0.000755961857913396"
+        ixz="-0.00757780893532764"
+        iyy="0.874612950294005"
+        iyz="0.0655471706214328"
+        izz="0.158268796043675" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UXAFull/meshes/L5_7.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UXAFull/meshes/L5_7.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J5_7"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="1.5708 0 0" />
+    <parent
+      link="L7_9" />
+    <child
+      link="L5_7" />
+    <axis
+      xyz="1 0 0" />
+<limit    upper="0.5" lower="-.5"   effort="2"  velocity="2" />
+  </joint>
+  <link
+    name="L3_5">
+    <inertial>
+      <origin
+        xyz="0.152438665709015 0.064427422212332 0.0150401445311797"
+        rpy="0 0 0" />
+      <mass
+        value="8.8041790191809" />
+      <inertia
+        ixx="0.158268796043675"
+        ixy="-0.00757780893532764"
+        ixz="-0.0655471706214328"
+        iyy="0.766282517284559"
+        iyz="0.000755961857913396"
+        izz="0.874612950294005" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UXAFull/meshes/L3_5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UXAFull/meshes/L3_5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J3_5"
+    type="revolute">
+    <origin
+      xyz="0 -0.0043 0.21"
+      rpy="1.5708 1.5708 0" />
+    <parent
+      link="L5_7" />
+    <child
+      link="L3_5" />
+    <axis
+      xyz="0 -1 0" />
+<limit    upper="0.5" lower="-.5"   effort="2"  velocity="2" />
+  </joint>
+  <link
+    name="L1_3">
+    <inertial>
+      <origin
+        xyz="0.360438665709122 -0.0644274222123318 -0.0155385825552931"
+        rpy="0 0 0" />
+      <mass
+        value="8.8041790191809" />
+      <inertia
+        ixx="0.158268796043675"
+        ixy="0.00757780893532764"
+        ixz="0.0655471706214328"
+        iyy="0.766282517284559"
+        iyz="0.000755961857913386"
+        izz="0.874612950294005" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UXAFull/meshes/L1_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UXAFull/meshes/L1_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J1_3"
+    type="revolute">
+    <origin
+      xyz="-0.208 0 -0.00049844"
+rpy="0 1.2037E-31 -1.044E-47" />
+      <!--rpy="3.1416 1.2037E-31 -1.044E-47" /-->
+    <parent
+      link="L3_5" />
+    <child
+      link="L1_3" />
+    <axis
+      xyz="0 1 0" />
+<limit    upper="0.5" lower="-.5"   effort="2"  velocity="2" />
+  </joint>
+  <link
+    name="L1">
+    <inertial>
+      <origin
+        xyz="-0.0632174222123319 0.360438665708917 0.015538582555293"
+        rpy="0 0 0" />
+      <mass
+        value="8.8041790191809" />
+      <inertia
+        ixx="0.766282517284559"
+        ixy="0.00757780893532764"
+        ixz="-0.000755961857913396"
+        iyy="0.158268796043675"
+        iyz="-0.0655471706214328"
+        izz="0.874612950294005" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UXAFull/meshes/L1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UXAFull/meshes/L1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J1"
+    type="revolute">
+    <origin
+      xyz="0 -0.00121 0"
+      rpy="-3.1416 -8.6736E-17 1.5708" />
+    <parent
+      link="L1_3" />
+    <child
+      link="L1" />
+    <axis
+      xyz="0 0 1" />
+<limit    upper="0.5" lower="-.5"   effort="2"  velocity="2" />
+  </joint>
+  <link
+    name="L8_10">
+    <inertial>
+      <origin
+        xyz="-0.121456334292252 -0.0494727319779496 0.010740144530283"
+        rpy="0 0 0" />
+      <mass
+        value="8.8041790191809" />
+      <inertia
+        ixx="0.158268796043675"
+        ixy="-0.00757780893532849"
+        ixz="-0.0655471706214328"
+        iyy="0.766282517284559"
+        iyz="0.000755961857913305"
+        izz="0.874612950294005" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UXAFull/meshes/L8_10.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UXAFull/meshes/L8_10.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J8_10"
+    type="revolute">
+    <origin
+      xyz="-0.057 -0.00034 -0.06"
+      rpy="1.5708 -1.5708 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="L8_10" />
+    <axis
+      xyz="1 0 0" />
+<limit    upper="0.5" lower="-.5"   effort="2"  velocity="2" />
+  </joint>
+  <link
+    name="L6_8">
+    <inertial>
+      <origin
+        xyz="0.0495725777876671 -0.0575613342920606 0.0107401445302831"
+        rpy="0 0 0" />
+      <mass
+        value="8.8041790191809" />
+      <inertia
+        ixx="0.766282517284559"
+        ixy="0.00757780893532764"
+        ixz="-0.000755961857913396"
+        iyy="0.158268796043675"
+        iyz="-0.0655471706214328"
+        izz="0.874612950294005" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UXAFull/meshes/L6_8.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UXAFull/meshes/L6_8.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J6_8"
+    type="revolute">
+    <origin
+      xyz="-0.063895 9.9846E-05 0"
+      rpy="0 0 -1.5708" />
+    <parent
+      link="L8_10" />
+    <child
+      link="L6_8" />
+    <axis
+      xyz="0 0 1" />
+<limit    upper="0.5" lower="-.5"   effort="2"  velocity="2" />
+  </joint>
+  <link
+    name="L4_6">
+    <inertial>
+      <origin
+        xyz="0.0495725777876671 0.0107401445302831 0.0575613342920606"
+        rpy="0 0 0" />
+      <mass
+        value="8.8041790191809" />
+      <inertia
+        ixx="0.766282517284559"
+        ixy="-0.000755961857913396"
+        ixz="-0.00757780893532764"
+        iyy="0.874612950294005"
+        iyz="0.0655471706214328"
+        izz="0.158268796043675" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UXAFull/meshes/L4_6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UXAFull/meshes/L4_6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J4_6"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="1.5708 0 0" />
+    <parent
+      link="L6_8" />
+    <child
+      link="L4_6" />
+    <axis
+      xyz="1 0 0" />
+<limit    upper="0.5" lower="-.5"   effort="2"  velocity="2" />
+  </joint>
+  <link
+    name="L2_4">
+    <inertial>
+      <origin
+        xyz="0.0495725777876671 0.152438665709017 0.0150401445311848"
+        rpy="0 0 0" />
+      <mass
+        value="8.8041790191809" />
+      <inertia
+        ixx="0.766282517284559"
+        ixy="0.00757780893532764"
+        ixz="-0.000755961857913396"
+        iyy="0.158268796043675"
+        iyz="-0.0655471706214328"
+        izz="0.874612950294005" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UXAFull/meshes/L2_4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UXAFull/meshes/L2_4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J2_4"
+    type="revolute">
+    <origin
+      xyz="0 -0.0043 0.21"
+      rpy="-1.5708 0 0" />
+    <parent
+      link="L4_6" />
+    <child
+      link="L2_4" />
+    <axis
+      xyz="1 0 0" />
+<limit    upper="0.5" lower="-.5"   effort="2"  velocity="2" />
+  </joint>
+  <link
+    name="L0_2">
+    <inertial>
+      <origin
+        xyz="0.361438665709017 0.0495725777876665 -0.0145417065070773"
+        rpy="0 0 0" />
+      <mass
+        value="8.8041790191809" />
+      <inertia
+        ixx="0.158268796043675"
+        ixy="0.00757780893532946"
+        ixz="0.0655471706214326"
+        iyy="0.766282517284559"
+        iyz="0.000755961857916393"
+        izz="0.874612950294005" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UXAFull/meshes/L0_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UXAFull/meshes/L0_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J0_2"
+    type="revolute">
+    <origin
+      xyz="0 -0.209 0.00049844"
+      rpy="-3.1416 3.8398E-29 1.5708" />
+    <parent
+      link="L2_4" />
+    <child
+      link="L0_2" />
+    <axis
+      xyz="0 1 0" />
+<limit    upper="0.5" lower="-.5"   effort="2"  velocity="2" />
+  </joint>
+  <link
+    name="L0">
+    <inertial>
+      <origin
+        xyz="-0.0495725777876671 -0.361438665709017 0.0145417065070759"
+        rpy="0 0 0" />
+      <mass
+        value="8.8041790191809" />
+      <inertia
+        ixx="0.766282517284559"
+        ixy="0.00757780893532722"
+        ixz="0.000755961857913441"
+        iyy="0.158268796043675"
+        iyz="0.0655471706214328"
+        izz="0.874612950294005" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UXAFull/meshes/L0.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UXAFull/meshes/L0.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J0"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="3.1416 -2.7669E-14 -1.5708" />
+    <parent
+      link="L0_2" />
+    <child
+      link="L0" />
+    <axis
+      xyz="0 0 1" />
+<limit    upper="0.5" lower="-.5"   effort="2"  velocity="2" />
+  </joint>
+  <link
+    name="L22_23_13_12">
+    <inertial>
+      <origin
+        xyz="0.00752726802205033 0.181456334292252 0.0110801445302722"
+        rpy="0 0 0" />
+      <mass
+        value="8.8041790191809" />
+      <inertia
+        ixx="0.766282517284559"
+        ixy="0.0075778089353288"
+        ixz="0.000755961857913271"
+        iyy="0.158268796043675"
+        iyz="0.0655471706214328"
+        izz="0.874612950294005" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UXAFull/meshes/L22_23_13_12.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UXAFull/meshes/L22_23_13_12.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J22_23_13_12"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="-1.5708 -1.8988E-15 3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="L22_23_13_12" />
+    <axis
+      xyz="0 -1 0" />
+<limit    upper="0.5" lower="-.5"   effort="2"  velocity="2" />
+  </joint>
+  <link
+    name="L13_15">
+    <inertial>
+      <origin
+        xyz="0.369356334292253 -0.100429098475815 0.0117301415427996"
+        rpy="0 0 0" />
+      <mass
+        value="8.8041790191809" />
+      <inertia
+        ixx="0.158268796043675"
+        ixy="-0.00757780893532764"
+        ixz="0.0655471706214328"
+        iyy="0.766282517284559"
+        iyz="-0.000755961857913396"
+        izz="0.874612950294005" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UXAFull/meshes/L13_15.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UXAFull/meshes/L13_15.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J13_15"
+    type="revolute">
+    <origin
+      xyz="-0.092902 -0.1879 -0.00065"
+      rpy="0 0 1.5708" />
+    <parent
+      link="L22_23_13_12" />
+    <child
+      link="L13_15" />
+    <axis
+      xyz="0 1 0" />
+<limit    upper="0.5" lower="-.5"   effort="2"  velocity="2" />
+  </joint>
+  <link
+    name="L15_17">
+    <inertial>
+      <origin
+        xyz="-0.0117301334610269 0.128929099853077 -0.369356334641838"
+        rpy="0 0 0" />
+      <mass
+        value="8.8041790191809" />
+      <inertia
+        ixx="0.874612946432147"
+        ixy="-0.000755958403578704"
+        ixz="0.0655471921959879"
+        iyy="0.766282517239501"
+        iyz="-0.00757780700439907"
+        izz="0.158268799950591" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UXAFull/meshes/L15_17.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UXAFull/meshes/L15_17.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J15_17"
+    type="revolute">
+    <origin
+      xyz="0 0.0285 0"
+      rpy="-2.3562 1.5708 0.7854" />
+    <parent
+      link="L13_15" />
+    <child
+      link="L15_17" />
+    <axis
+      xyz="-1 0 0" />
+<limit    upper="0.5" lower="-.5"   effort="2"  velocity="2" />
+  </joint>
+  <link
+    name="L17_19">
+    <inertial>
+      <origin
+        xyz="-0.012597134449667 0.183200331311431 -0.369354055608543"
+        rpy="0 0 0" />
+      <mass
+        value="8.8041790191809" />
+      <inertia
+        ixx="0.874636703261414"
+        ixy="-0.000757332743049798"
+        ixz="0.0654172437488521"
+        iyy="0.76628251723594"
+        iyz="-0.00757766959526481"
+        izz="0.158245043124885" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UXAFull/meshes/L17_19.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UXAFull/meshes/L17_19.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J17_19"
+    type="revolute">
+    <origin
+      xyz="0.0008 -0.054271 0"
+      rpy="7.0184E-17 -0.0001814 -2.355E-09" />
+    <parent
+      link="L15_17" />
+    <child
+      link="L17_19" />
+    <axis
+      xyz="0 -1 0" />
+<limit    upper="0.5" lower="-.5"   effort="2"  velocity="2" />
+  </joint>
+  <link
+    name="L19">
+    <inertial>
+      <origin
+        xyz="-0.369354055610063 0.260354544179863 0.0125971260773225"
+        rpy="0 0 0" />
+      <mass
+        value="8.8041790191809" />
+      <inertia
+        ixx="0.15824504312499"
+        ixy="-0.00757767170245296"
+        ixz="-0.065417243505268"
+        iyy="0.766282517284559"
+        iyz="0.000757336227045136"
+        izz="0.87463670321269" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UXAFull/meshes/L19.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UXAFull/meshes/L19.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J19"
+    type="revolute">
+    <origin
+      xyz="0 -0.077154 0"
+      rpy="1.5495 -1.5708 -1.5495" />
+    <parent
+      link="L17_19" />
+    <child
+      link="L19" />
+    <axis
+      xyz="1 0 0" />
+<limit    upper="0.5" lower="-.5"   effort="2"  velocity="2" />
+  </joint>
+  <link
+    name="L12_14">
+    <inertial>
+      <origin
+        xyz="-0.369356334292253 -0.086010898070488 0.011730147538206"
+        rpy="0 0 0" />
+      <mass
+        value="8.8041790191809" />
+      <inertia
+        ixx="0.158268796043675"
+        ixy="-0.00757780893532595"
+        ixz="-0.0655471706214328"
+        iyy="0.766282517284559"
+        iyz="0.000755961857913578"
+        izz="0.874612950294005" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UXAFull/meshes/L12_14.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UXAFull/meshes/L12_14.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J12_14"
+    type="revolute">
+    <origin
+      xyz="0.093538 -0.1879 -0.00065"
+      rpy="0 0 -1.5708" />
+    <parent
+      link="L22_23_13_12" />
+    <child
+      link="L12_14" />
+    <axis
+      xyz="0 -1 0" />
+	<limit    upper="0.5" lower="-.5"   effort="2"  velocity="2" />
+  </joint>
+  <link
+    name="L14_16">
+    <inertial>
+      <origin
+        xyz="-0.0117301565103909 0.114510900168128 0.369356333921461"
+        rpy="0 0 0" />
+      <mass
+        value="8.8041790191809" />
+      <inertia
+        ixx="0.874612954485707"
+        ixy="0.000755958673109811"
+        ixz="-0.0655471482172275"
+        iyy="0.766282517236767"
+        iyz="-0.00757780683947706"
+        izz="0.158268791899765" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UXAFull/meshes/L14_16.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UXAFull/meshes/L14_16.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J14_16"
+    type="revolute">
+    <origin
+      xyz="0 0.0285 0"
+      rpy="2.3562 1.5708 -0.7854" />
+    <parent
+      link="L12_14" />
+    <child
+      link="L14_16" />
+    <axis
+      xyz="-1 0 0" />
+<limit    upper="0.5" lower="-.5"   effort="2"  velocity="2" />
+  </joint>
+  <link
+    name="L16_18">
+    <inertial>
+      <origin
+        xyz="-0.0124633531777911 0.166182131660525 0.369358594128248"
+        rpy="0 0 0" />
+      <mass
+        value="8.8041790191809" />
+      <inertia
+        ixx="0.874589220885954"
+        ixy="0.000754588053103218"
+        ixz="-0.0656767044156724"
+        iyy="0.76628251723594"
+        iyz="-0.00757794340496047"
+        izz="0.158292525500345" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UXAFull/meshes/L16_18.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UXAFull/meshes/L16_18.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J16_18"
+    type="revolute">
+    <origin
+      xyz="0.0008 -0.051671 0"
+      rpy="-2.7929E-15 -0.00018086 5.4717E-10" />
+    <parent
+      link="L14_16" />
+    <child
+      link="L16_18" />
+    <axis
+      xyz="0 1 0" />
+<limit    upper="0.5" lower="-.5"   effort="2"  velocity="2" />
+  </joint>
+  <link
+    name="L18">
+    <inertial>
+      <origin
+        xyz="0.369358594129653 0.243336343723085 0.0124633610030897"
+        rpy="0 0 0" />
+      <mass
+        value="8.8041790191809" />
+      <inertia
+        ixx="0.158292525500164"
+        ixy="-0.0075779455134115"
+        ixz="0.065676704171479"
+        iyy="0.766282517284559"
+        iyz="-0.000754591536341252"
+        izz="0.874589220837516" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UXAFull/meshes/L18.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UXAFull/meshes/L18.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J18"
+    type="revolute">
+    <origin
+      xyz="0 -0.077154212465495 0"
+      rpy="-1.45062580839658 -1.57079630572147 1.45062578495251" />
+    <parent
+      link="L16_18" />
+    <child
+      link="L18" />
+    <axis
+      xyz="-1 0 0" />
+<limit    upper="0.5" lower="-.5"   effort="2"  velocity="2" />
+  </joint>
+  <link
+    name="L23_24">
+    <inertial>
+      <origin
+        xyz="0.395256334292252 -0.0142275739168479 -0.00928909982545545"
+        rpy="0 0 0" />
+      <mass
+        value="8.8041790191809" />
+      <inertia
+        ixx="0.158268796043675"
+        ixy="-0.0655471708651145"
+        ixz="-0.00757780682751158"
+        iyy="0.874612950342625"
+        iyz="0.00075595837430104"
+        izz="0.76628251723594" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UXAFull/meshes/L23_24.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UXAFull/meshes/L23_24.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J23_24"
+    type="revolute">
+    <origin
+      xyz="-0.0017618 -0.2138 -0.0031474"
+      rpy="-1.5708 1.4085E-22 1.5708" />
+    <parent
+      link="L22_23_13_12" />
+    <child
+      link="L23_24" />
+    <axis
+      xyz="-1 0 0" />
+<limit    upper="0.5" lower="-.5"   effort="2"  velocity="2" />
+  </joint>
+  <link
+    name="L24">
+    <inertial>
+      <origin
+        xyz="-0.00928910028297751 -0.456110545317127 0.0142275736181337"
+        rpy="0 0 0" />
+      <mass
+        value="8.8041790191809" />
+      <inertia
+        ixx="0.766282517284559"
+        ixy="0.00757780893532764"
+        ixz="-0.000755961857913396"
+        iyy="0.158268796043675"
+        iyz="-0.0655471706214328"
+        izz="0.874612950294005" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UXAFull/meshes/L24.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://UXAFull/meshes/L24.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J24"
+    type="revolute">
+    <origin
+      xyz="-0.0608542110248748 0 0"
+      rpy="-1.36211046949758E-07 -1.57079629029466 1.57079646300594" />
+    <parent
+      link="L23_24" />
+    <child
+      link="L24" />
+    <axis
+      xyz="0.999999999999999 0 0" />
+<limit    upper="0.5" lower="-.5"   effort="2"  velocity="2" />
+  </joint>
+</robot>
