@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<launch>
+  <arg
+    name="model" />
+  <arg
+    name="gui"
+    default="False" />
+  <param
+    name="robot_description"
+    textfile="$(find UXAFull)/urdf/FullBody_2.urdf" />
+  <param
+    name="use_gui"
+    value="$(arg gui)" />
+  <!--node
+    name="joint_state_publisher"
+    pkg="joint_state_publisher"
+    type="joint_state_publisher" /-->
+
+  <node
+    name="robot_state_publisher"
+    pkg="robot_state_publisher"
+    type="state_publisher">
+<remap from="joint_states" to="UXAJointState"/>
+</node>
+  <node
+    name="rviz"
+    pkg="rviz"
+    type="rviz"
+    args="-d $(find UXAFull)/urdf.rviz" />
+
+ <node
+    name="uxa_display"
+    pkg="uxa_display"
+    type="main" />
+
+
+ <node
+    name="uxa_motion_control"
+    pkg="uxa_motion_control"
+    type="main" />
+<node
+    name="sam_hub"
+    pkg="sam_hub"
+    type="mainsamhub" />
+<node
+    name="sensor_hub"
+    pkg="sensor_hub"
+    type="mainsensor" />
+</launch>
